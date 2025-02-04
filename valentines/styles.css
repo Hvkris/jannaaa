@@ -1,0 +1,131 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #333;
+    background-color: #f9f7f6; /* Light background color */
+}
+
+/* Page Container */
+.page {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Active Page */
+.page.active {
+    display: flex !important;
+    z-index: 1;
+    opacity: 1;
+}
+
+/* Button Styling */
+.btn {
+    padding: 16px 40px;
+    background-color: #f9f7f6; /* Set a more visible background */
+    color: #333; /* Adjusted for better contrast */
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #e2dfdd; /* Slightly darker hover effect */
+    transform: scale(1.05);
+}
+
+/* Landing Page Styling */
+.intro {
+    background-image: url('1st page.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120vh;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.intro p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.input-box {
+    padding: 12px;
+    width: 80%;
+    max-width: 300px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Invitation Page Styling */
+.invitation {
+    background-image: url('2nd page.png'); /* Background image for invitation page */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120vh;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.invitation-buttons {
+    margin-top: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+}
+
+/* Thank You Page Styling */
+.thank-you {
+    background-image: url('bye.png'); /* Correct image reference */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120vh;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
